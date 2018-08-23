@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+        
+
+        <div class="panel panel-info col-sm-8 col-sm-offset-2">
+            <div class="panel-heading">Student's Data</div>
+            <div class="panel-body">
+                
+                <form class="" method=post >
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" value='<%= data.name %>' id="name" name='name'>
+                        <span class="alert-danger"><%= msg['name'] %></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="text" class="form-control" value='<%= data.age %>' id="age" name='age'>
+                        <span class="alert-danger"><%= msg['age'] %></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-success" id="btnsubmit" value="Add Student" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        
+
+
+    </body>
+</html>
