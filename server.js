@@ -12,7 +12,8 @@ app.use(validator());
 app.use(bp.json());
 app.set('view engine', 'ejs');
 app.set('views', ['./views', './views/student']);
-app.set(express.static('public'));
+app.use(express.static(__dirname + '/public'));
+
 app.use('/student', studRouter);
 
 app.get('/', function(req, res){

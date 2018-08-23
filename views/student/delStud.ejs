@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+        
+        
+
+        <div class="panel panel-info col-sm-8 col-sm-offset-2">
+            <div class="panel-heading">Student's Data</div>
+            <div class="panel-body">
+                
+                <div class="row">
+                    <div class="col-sm-4"><b>Name</b></div>
+                    <div class="col-sm-8"><%= data.name %></div>
+                </div>
+
+                <div class="row">
+                        <div class="col-sm-4"><b>Age</b></div>
+                        <div class="col-sm-8"><%= data.age %></div>
+                </div>
+                    <br><br>
+                <div class="col-sm-12">
+                    Are YOu sure to delete this?
+                </div>
+
+                <form class="" method=post >
+                    <div class="form-group col-sm-12">
+                        <input type="submit" class="btn btn-danger" id="btnsubmit" value="Delete Student" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+        
+
+
+    </body>
+</html>

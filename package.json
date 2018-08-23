@@ -15,6 +15,7 @@
     "express-joi": "^0.3.1",
     "express-validator": "^5.3.0",
     "joi": "^13.6.0",
-    "mongojs": "^2.6.0"
+    "mongojs": "^2.6.0",
+    "sweetalert2": "^7.26.11"
   }
 }
